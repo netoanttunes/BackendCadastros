@@ -7,6 +7,9 @@ mongoose.connect('mongodb+srv://unicad:unicad@cluster0-ymxdx.mongodb.net/test?re
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
+
+app.use(cors());
+
 app.use(express.json());
 
 app.use(routes);
